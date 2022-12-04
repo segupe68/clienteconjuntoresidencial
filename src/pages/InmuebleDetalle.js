@@ -9,20 +9,18 @@ const InmuebleDetalle= ()=>{
     const [inmueble, setInmueble]= useState(null)
     const {id}= useParams()
     const navegar= useNavigate()
-       
+      
 
     useEffect(()=>{
         axios.get(`${INMUEBLEDETALLE_GET_ENDPOINT}/${id}`)
         .then(respuesta=>{
             setInmueble(respuesta.data)
-          
-            
+                      
         })
         .catch(err=>{
             console.error(err)
             navegar(-1)
-           
-            
+                      
         })
     },[])
 

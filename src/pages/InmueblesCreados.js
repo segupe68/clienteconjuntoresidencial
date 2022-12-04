@@ -9,7 +9,6 @@ const InmueblesCreados= ()=>{
     const [inmuebles, setInmuebles]= useState([])
     const [buscando, setBuscando]= useState(true)
     
-
     useEffect(()=>{
         axios.get(INMUEBLESCREADOS_GET_ENDPOINT)
         .then(respuesta=>{

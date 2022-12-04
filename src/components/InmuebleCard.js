@@ -17,7 +17,6 @@ function InmuebleCard({inmueble}) {
             <Link to={`/inmueble/${inmueble.id}`}>
                 Torre {inmueble.torre}  Apartamento {inmueble.numeroInmueble}
             </Link>
-
             
           </Card.Title>
           <Card.Text>

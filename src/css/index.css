@@ -1,0 +1,11 @@
+.mi-badge-pagado{
+    padding: 8px !important;
+    background-color:green;
+
+}
+.mi-badge-pendiente{
+    padding: 8px !important;
+    color:blue ;
+    background-color:grey;
+    
+}
